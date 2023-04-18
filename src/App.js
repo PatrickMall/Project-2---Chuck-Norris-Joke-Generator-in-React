@@ -11,7 +11,6 @@ function App() {
         <Route path="/" element={<Jokes />} />
         <Route path="/favourites" element={<Favourites />} />
       </Routes>
-      <Jokes />
     </div>
   );
 }

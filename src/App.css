@@ -1,14 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap');
+    
 :root {
+    box-sizing: border-box;
     --black: #161616;
     --white: #f8f8f8;
     --red: #EC161F;
     --yellow: #efdb3f;
+    --blackTransparent: #16161690;
+
 }
 .App {
     background-image: url('./chuck-norris-background-1920px.png');
     width: 100vw;
     height: 100vh;
 }
+.nav-bar {
+    text-align: center;
+}
+.jokes {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+h1 {
+    font-family: 'Stardos Stencil', sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 77px;
+    text-shadow: 5px 5px 0 var(--black);
+    line-height: 1em;
+}
 button {
-    background: var(--yellow)
+    background: var(--yellow);
+    font-family: prompt, sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 20px;
+    box-shadow: 0 0 10px var(--black);
+    padding: 0 15px;
+}
+.category-container, .rate-container {
+    background-color: var(--blackTransparent);
+    width:450px;
+    padding: 10px;
+    text-align: center;
+}
+.categories {
+    display: inline;
+    font-family: 'Stardos Stencil', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: 2px 2px 0 var(--black);
+}
+select {
+    padding: 0 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: prompt, sans-serif;
+    text-transform:  uppercase;
+    background: var(--white);
+    box-shadow: 0 0 10px var(--black);
+    text-align: center;
+}
+.header-container {
+    text-align: center;
+}
+#random {
+    margin-top: 0px;
+}
+#quote {
+    text-align: center;
+    color: var(--white);
+    font-family: prompt;
+    font-size: 44px;
+    text-shadow: 3px 3px 0 var(--black);
+    margin: 0 20px;
+}
+
+footer {
+   position: fixed;
+   bottom: 0px;
+   
+}
+
+.rate-container, form, .rate-save {
+    display: inline;
+    padding: 20px;
+}
+.rate-save {
+    font-family: 'Stardos Stencil', sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 22px;
+    text-shadow: 2px 2px 0 var(--black);
+}
+.favourites-header {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 55px;
+}
+.favourites-sub-header {
+    text-align: left;
+    margin-left: 40px;
+    font-family: prompt;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 var(--black);
+}
+.quote-item-container {
+    text-align: center;
+    color: var(--white);
+    font-family: prompt;
+    font-size: 22px;
+    margin: 0 20px;
+    border: 2px solid white;
+    text-align: left;
+    background-color: var(--blackTransparent);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    box-shadow: 0 0 5px var(--yellow);
+}
+.emoji {
+    display: inline;
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: var(--red);
+    border-radius: 200px;
+    line-height: 3em;
+    border: 2px solid var(--black)
+}
+.emoji-container {
+    text-align: center;
+}
+.remove {
+    background-color: var(--red);
+    border-radius: 200px;
+    padding: 3px 10px;
+    font-family: 'Stardos Stencil', sans-serif;
+    color: var(--white);
+    font-size: 33px;
+    border: 2px solid var(--black);
+    margin: 10px 10px 10px 185px;
+}
+.quote-item, .rating {
+    margin-left: 30px;
+    text-shadow: 2px 2px 0 var(--black)
 }
