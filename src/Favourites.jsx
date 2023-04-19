@@ -1,8 +1,9 @@
-import QuoteItems from "./JokeItems";
 
-export default function Favourites() {
+import JokeItems from "./JokeItems"
 
-//useState for JokeItems
+export default function Favourites({jokes, clearer}) {
+
+
     return (
         <>
         <div className="jokes">
@@ -12,13 +13,13 @@ export default function Favourites() {
                         <h1 className="favourites-header">My Favourites</h1>
                         <h2 className="favourites-sub-header">You can add your favourite badass emoji to your top jokes or delete your jokes</h2>
                     </div>
-                    <JokeItems />
+                    <JokeItems jokes={jokes} />
             </div>
              <div className="spacing-container">
              </div>
              <footer>
                 <div className="clear-all-container">
-                    <button className="clear-all">Clear all my Jokes</button>
+                    <button className="clear-all" onClick={clearer}>Clear all my Jokes</button>
                 </div>
             </footer>   
              </div>

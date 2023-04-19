@@ -1,22 +1,10 @@
-export default function JokeItems() {
-    return (
-        <>
-        <div className="quote-item-container">
-                        <p class="quote-item">“Chuck Norris once ejaculated
-    for forty-five minutes straight.”
-                        </p>
-                        
-                            <button className="remove">X</button>
-                            <div className="rating">
-                                <p>⭐⭐⭐⭐⭐</p>
-                            </div>
-                            <div className="emoji-container">
-                                <div className="emoji">👊</div>
-                                <div className="emoji">🔫</div>
-                                <div className="emoji">💪</div>
-                            
-                        </div>
-                </div>
-        </>
-    )
-}
+import JokeItem from "./JokeItem";
+export default function JokeItems({jokes}) {
+    console.log(jokes)
+   
+    const jokeListItems = jokes.map(function (joke, index) {
+        return <JokeItem joke={joke} key={index} />   })
+        return (
+            <ul>{jokeListItems}</ul>
+        )}
+        

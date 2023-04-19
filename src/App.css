@@ -147,6 +147,7 @@ footer {
     font-size: 33px;
     border: 2px solid var(--black);
     margin: 10px 10px 10px 185px;
+    max-height: 55px
 }
 .quote-item, .rating {
     margin-left: 30px;

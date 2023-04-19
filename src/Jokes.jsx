@@ -5,8 +5,11 @@ import JokeGenerator from "./JokeGenerator";
 let categorySelected = false;
 let categoryType = "";
 
-export default function Jokes() {
-// Main click function that pulls in the joke form the Api
+export default function Jokes({jokesUpdater, inputJoke, setInputJoke}) {
+
+
+
+    // Main click function that pulls in the joke form the Api
     function randomBtnClick() {
         fetch(categorySelected ? `https://api.chucknorris.io/jokes/random?category=${categoryType}` :`https://api.chucknorris.io/jokes/random`)
       .then((response) => response.json())
@@ -30,13 +33,18 @@ function handleAddCategory(e) {
     categorySelected = true;
 }}
 
-//Rating and Save
+//Save to Favourites
+function handleFavouriting() {
+
+}
 
 
-// InputJoke State
-const [inputJoke, setInputJoke] = useState( );
 
-//
+
+
+
+
+
 
 
     
@@ -55,18 +63,8 @@ const [inputJoke, setInputJoke] = useState( );
              </div>
              <footer>
                 <div className="rate-container">
-                    <h2 className="rate-save">Rate and Save:</h2>
-                    <form>
-                    <select>
-                        <option>Select a rating</option>
-                        <option>⭐</option>
-                        <option>⭐⭐</option>
-                        <option>⭐⭐⭐</option>
-                        <option>⭐⭐⭐⭐</option>
-                        <option>⭐⭐⭐⭐⭐</option>
-                    </select>
-                    <button type="submit">This one's a keeper</button>
-                    </form>
+                    <h2 className="rate-save">Save to favourites</h2>
+                    <button onClick={jokesUpdater}>This one's a keeper</button>
                 </div>
             </footer>   
              </div>
