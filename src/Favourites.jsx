@@ -28,19 +28,8 @@ export default function Favourites() {
              <div className="spacing-container">
              </div>
              <footer>
-                <div className="rate-container">
-                    <h2 className="rate-save">Rate and Save:</h2>
-                    <form>
-                    <select>
-                        <option>Select a rating</option>
-                        <option>⭐</option>
-                        <option>⭐⭐</option>
-                        <option>⭐⭐⭐</option>
-                        <option>⭐⭐⭐⭐</option>
-                        <option>⭐⭐⭐⭐⭐</option>
-                    </select>
-                    <button type="submit">This one's a keeper</button>
-                    </form>
+                <div className="clear-all-container">
+                    <button className="clear-all">Clear all my Jokes</button>
                 </div>
             </footer>   
              </div>

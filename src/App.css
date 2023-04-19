@@ -31,6 +31,9 @@ h1 {
     text-shadow: 5px 5px 0 var(--black);
     line-height: 1em;
 }
+.generator-header {
+    text-align: center;
+}
 button {
     background: var(--yellow);
     font-family: prompt, sans-serif;
@@ -42,9 +45,9 @@ button {
 }
 .category-container, .rate-container {
     background-color: var(--blackTransparent);
-    width:450px;
-    padding: 10px;
+    padding: 20px 0 20px 30px;
     text-align: center;
+    display: inline;
 }
 .categories {
     display: inline;
@@ -85,7 +88,7 @@ footer {
    
 }
 
-.rate-container, form, .rate-save {
+.rate-container, form, .rate-save, .clear-all-container {
     display: inline;
     padding: 20px;
 }
@@ -95,6 +98,7 @@ footer {
     color: var(--white);
     font-size: 22px;
     text-shadow: 2px 2px 0 var(--black);
+    padding: 20px 0 20px 20px;
 }
 .favourites-header {
     text-align: left;
@@ -135,11 +139,11 @@ footer {
     text-align: center;
 }
 .remove {
-    background-color: var(--red);
+    background-color: var(--yellow);
     border-radius: 200px;
     padding: 3px 10px;
     font-family: 'Stardos Stencil', sans-serif;
-    color: var(--white);
+    color: var(--black);
     font-size: 33px;
     border: 2px solid var(--black);
     margin: 10px 10px 10px 185px;

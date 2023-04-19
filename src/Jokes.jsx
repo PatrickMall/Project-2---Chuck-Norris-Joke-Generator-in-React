@@ -1,41 +1,48 @@
+import { useState } from "react";
+import Categories from "./Category";
+import JokeGenerator from "./JokeGenerator";
+//Main click function that pulls in the joke form the Api
+let categorySelected = false;
+let categoryType = "";
 export default function Jokes() {
+
+    function randomBtnClick() {
+        fetch(categorySelected ? `https://api.chucknorris.io/jokes/random?category=${categoryType}` :`https://api.chucknorris.io/jokes/random`)
+      .then((response) => response.json())
+      .then((results) => {
+        const newJoke = results.value
+        setInputJoke(newJoke)  
+        console.log(categorySelected, categoryType) 
+    })
+      .catch((error) => alert("Error", error));
+      console.log()
+    }
+
+// Category button function
+function handleAddCategory(e) {
+    e.preventDefault()
+    if (e.target[0].value === 'random') {
+        categorySelected = false;
+        categoryType = "";
+    } else {
+    categoryType = e.target[0].value
+    categorySelected = true;
+}}
+    //inputJoke State
+    const [inputJoke, setInputJoke] = useState( );
+
+
+    
+    
     return (
 
         <>
         <div className="jokes">
             <div className="layout">
                 <div className="content-container">
-                    <div className="category-container">
-                        <h2 className="categories">Categories:</h2>
-                        <select>
-                            <option>pick a category</option>
-                            <option>animal</option>
-                            <option>career</option>
-                            <option>celebrity</option>
-                            <option>dev</option>
-                            <option>explicit</option>
-                            <option>fashion</option>
-                            <option>food</option>
-                            <option>history</option>
-                            <option>money</option>
-                            <option>movie</option>
-                            <option>music</option>
-                            <option>political</option>
-                            <option>religion</option>
-                            <option>science</option>
-                            <option>sport</option>
-                            <option>travel</option>
-                        </select>
-                    </div>
-                    <div className="header-container">
-                        <h1>Chuck Norris <br />Joke Generator</h1>
-                        <button id="random">Make me laugh 🤣</button>
-                    </div>
-                    <div id="quote">
-                        <p>“Chuck Norris once ejaculated
-    for forty-five minutes straight.”
-                        </p>
-                </div>
+                    <Categories categoryBtn={handleAddCategory}/>
+                    <h1 className="generator-header">Chuck Norris <br />Joke Generator</h1>
+                    <JokeGenerator  joke={inputJoke} buttonClick={randomBtnClick}/>
             </div>
              <div className="spacing-container">
              </div>
