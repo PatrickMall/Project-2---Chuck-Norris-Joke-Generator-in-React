@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Categories from "./Category";
 import JokeGenerator from "./JokeGenerator";
-//Main click function that pulls in the joke form the Api
+//Category Variables that are globally needed for other click functions
 let categorySelected = false;
 let categoryType = "";
-export default function Jokes() {
 
+export default function Jokes() {
+// Main click function that pulls in the joke form the Api
     function randomBtnClick() {
         fetch(categorySelected ? `https://api.chucknorris.io/jokes/random?category=${categoryType}` :`https://api.chucknorris.io/jokes/random`)
       .then((response) => response.json())
@@ -28,8 +29,14 @@ function handleAddCategory(e) {
     categoryType = e.target[0].value
     categorySelected = true;
 }}
-    //inputJoke State
-    const [inputJoke, setInputJoke] = useState( );
+
+//Rating and Save
+
+
+// InputJoke State
+const [inputJoke, setInputJoke] = useState( );
+
+//
 
 
     
