@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import { useState } from 'react';
 function App() {
 
-const [inputJoke, setInputJoke] = useState( );
+const [inputJoke, setInputJoke] = useState([]);
 
 const [jokes, setJokes] = useState(
   []
@@ -14,16 +14,18 @@ const [jokes, setJokes] = useState(
 const jokesUpdater = function () {
   const newJoke = [...jokes, inputJoke];
   setJokes(newJoke);
+  console.log(jokes)
+  console.log(inputJoke)
 }
 const favouritesClearer = function() {
   setJokes([])
 }
 
 const jokeAddEmoji = function(e, index) {
-  let addNewEmoji = [...jokes[index], e.target.id]
-  const joined = addNewEmoji.join('')
+  const jokeForAdding = [...jokes[index].joke, e.target.id]
+  const joined = jokeForAdding.join('')
   const jokeCopy = [...jokes]
-  jokeCopy.splice(index, 1, joined)
+  jokeCopy[index].joke = joined
   setJokes(jokeCopy);
 }
 
@@ -34,7 +36,9 @@ setJokes(newJokeArr);
 }
 
 const flagJoke = function(e, index) {
-  
+  const flagJoke = [...jokes]
+  flagJoke[index].flagged ? flagJoke[index].flagged = false : flagJoke[index].flagged = true
+  setJokes(flagJoke);
 }
 
 

@@ -14,11 +14,11 @@ export default function Jokes({jokesUpdater, inputJoke, setInputJoke}) {
         fetch(categorySelected ? `https://api.chucknorris.io/jokes/random?category=${categoryType}` :`https://api.chucknorris.io/jokes/random`)
       .then((response) => response.json())
       .then((results) => {
-        const newJoke = results.value
+        const newJoke = {joke:results.value, flagged: false }
         setInputJoke(newJoke)  
     })
       .catch((error) => alert("Error", error));
-      console.log()
+
     }
 
 // Category button function

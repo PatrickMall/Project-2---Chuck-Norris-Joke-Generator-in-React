@@ -126,6 +126,20 @@ footer {
     grid-template-columns: 1fr 250px;
     box-shadow: 0 0 5px var(--yellow);
 }
+.quote-item-container-flagged {
+    text-align: center;
+    color: var(--white);
+    font-family: prompt;
+    font-size: 22px;
+    margin: 10px 20px;
+    border: 2px solid white;
+    text-align: left;
+    background-color: var(--yellow);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    box-shadow: 0 0 5px var(--yellow);
+}
+
 .emoji{
     display: inline;
     padding: 5px 10px;
