@@ -16,7 +16,6 @@ export default function Jokes({jokesUpdater, inputJoke, setInputJoke}) {
       .then((results) => {
         const newJoke = results.value
         setInputJoke(newJoke)  
-        console.log(categorySelected, categoryType) 
     })
       .catch((error) => alert("Error", error));
       console.log()
