@@ -16,11 +16,11 @@ const [jokes, setJokes] = useState(
 const jokesUpdater = function () {
   const newJoke = [...jokes, inputJoke];
   setJokes(newJoke);
-  console.log(jokes)
 }
 const favouritesClearer = function() {
   setJokes([])
 }
+
 
   return (
     <div className="App">

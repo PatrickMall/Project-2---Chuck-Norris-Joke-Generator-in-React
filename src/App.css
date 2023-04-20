@@ -126,7 +126,7 @@ footer {
     grid-template-columns: 1fr 250px;
     box-shadow: 0 0 5px var(--yellow);
 }
-.emoji {
+.emoji{
     display: inline;
     padding: 5px 10px;
     margin: 0 10px;
@@ -134,6 +134,15 @@ footer {
     border-radius: 200px;
     line-height: 3em;
     border: 2px solid var(--black)
+}
+.emoji-flag {
+    width: 35px;
+    margin: 20px;
+    height: 35px;
+    background-color: var(--yellow);
+    text-align: center;
+    border-radius: 200px;
+    border: 2px solid var(--black);
 }
 .emoji-container {
     text-align: center;
