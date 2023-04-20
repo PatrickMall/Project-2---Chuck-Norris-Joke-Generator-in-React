@@ -34,7 +34,7 @@ setJokes(newJokeArr);
 }
 
 const flagJoke = function(e, index) {
-  console.log(index)
+  
 }
 
 
