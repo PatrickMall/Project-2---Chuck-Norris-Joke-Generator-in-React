@@ -6,8 +6,6 @@ import NavBar from './NavBar';
 import { useState } from 'react';
 function App() {
 
-//useState for Jokes
-// InputJoke State
 const [inputJoke, setInputJoke] = useState( );
 
 const [jokes, setJokes] = useState(
@@ -21,13 +19,21 @@ const favouritesClearer = function() {
   setJokes([])
 }
 
+const jokeAddEmoji = function(e, index) {
+  let addNewEmoji = [...jokes[index], e.target.id]
+  const joined = addNewEmoji.join('')
+  const jokeCopy = [...jokes]
+  jokeCopy.splice(index, 1, joined)
+  setJokes(jokeCopy);
+}
+
 
   return (
     <div className="App">
       <NavBar />
       <Routes >
         <Route path="/" element={<Jokes jokesUpdater={jokesUpdater} inputJoke={inputJoke} setInputJoke={setInputJoke}/>} />
-        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer}/>} />
+        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer} addEmoji={jokeAddEmoji}/>} />
       </Routes>
     </div>
   );

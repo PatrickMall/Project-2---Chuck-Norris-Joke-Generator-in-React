@@ -33,23 +33,7 @@ function handleAddCategory(e) {
     categorySelected = true;
 }}
 
-//Save to Favourites
-function handleFavouriting() {
-
-}
-
-
-
-
-
-
-
-
-
-
-    
-    
-    return (
+return (
 
         <>
         <div className="jokes">
