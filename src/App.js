@@ -27,13 +27,20 @@ const jokeAddEmoji = function(e, index) {
   setJokes(jokeCopy);
 }
 
+const removeJoke = function(e, index) {
+const removeJoke = [...jokes]
+let newJokeArr = removeJoke.filter( item => item !== removeJoke[index])
+setJokes(newJokeArr);
+
+}
+
 
   return (
     <div className="App">
       <NavBar />
       <Routes >
         <Route path="/" element={<Jokes jokesUpdater={jokesUpdater} inputJoke={inputJoke} setInputJoke={setInputJoke}/>} />
-        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer} addEmoji={jokeAddEmoji}/>} />
+        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer} addEmoji={jokeAddEmoji} remove={removeJoke}/>} />
       </Routes>
     </div>
   );

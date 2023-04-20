@@ -1,7 +1,7 @@
 
 import JokeItems from "./JokeItems"
 
-export default function Favourites({jokes, clearer, addEmoji}) {
+export default function Favourites({jokes, clearer, addEmoji, remove}) {
 
 
     return (
@@ -13,7 +13,7 @@ export default function Favourites({jokes, clearer, addEmoji}) {
                         <h1 className="favourites-header">My Favourites</h1>
                         <h2 className="favourites-sub-header">You can add your favourite badass emoji to your top jokes or delete your jokes</h2>
                     </div>
-                    <JokeItems jokes={jokes} addEmoji={addEmoji}/>
+                    <JokeItems jokes={jokes} addEmoji={addEmoji} remove={remove}/>
             </div>
              <div className="spacing-container">
              </div>
