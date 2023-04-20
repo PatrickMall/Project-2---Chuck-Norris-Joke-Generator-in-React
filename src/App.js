@@ -31,7 +31,10 @@ const removeJoke = function(e, index) {
 const removeJoke = [...jokes]
 let newJokeArr = removeJoke.filter( item => item !== removeJoke[index])
 setJokes(newJokeArr);
+}
 
+const flagJoke = function(e, index) {
+  console.log(index)
 }
 
 
@@ -40,7 +43,7 @@ setJokes(newJokeArr);
       <NavBar />
       <Routes >
         <Route path="/" element={<Jokes jokesUpdater={jokesUpdater} inputJoke={inputJoke} setInputJoke={setInputJoke}/>} />
-        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer} addEmoji={jokeAddEmoji} remove={removeJoke}/>} />
+        <Route path="/favourites" element={<Favourites jokes={jokes} clearer={favouritesClearer} addEmoji={jokeAddEmoji} remove={removeJoke} flag={flagJoke}/>} />
       </Routes>
     </div>
   );
