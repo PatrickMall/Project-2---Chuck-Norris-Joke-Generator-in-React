@@ -1,5 +1,5 @@
 import JokeItem from "./JokeItem";
-import { useState } from "react";
+
 export default function JokeItems({jokes, addEmoji, remove, flag}) {
 
     const jokeListItems = jokes.map(function (joke, index) {

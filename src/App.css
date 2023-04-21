@@ -28,22 +28,32 @@ h1 {
     text-transform: uppercase;
     color: var(--white);
     font-size: 77px;
-    text-shadow: 5px 5px 0 var(--black);
+    text-shadow: 3px 3px 0 var(--black);
     line-height: 1em;
 }
 .generator-header {
     text-align: center;
 }
 button {
-    background: var(--yellow);
+    background-color: var(--yellow);
     font-family: prompt, sans-serif;
     text-transform: uppercase;
     font-size: 22px;
     margin: 20px;
     box-shadow: 0 0 10px var(--black);
     padding: 0 15px;
+    transition: background-color 0.75s, box-shadow 0.75s, border 2s, color 0.75s;
+    border: 2px solid var(--black);
 }
-.category-container, .rate-container {
+
+button:hover {
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: 0 0 10px var(--yellow);
+    border: 0;
+    border: 2px solid var(--white);
+}
+.category-container, .favourite-container{
     background-color: var(--blackTransparent);
     padding: 20px 0 20px 30px;
     text-align: center;
@@ -88,11 +98,11 @@ footer {
    
 }
 
-.rate-container, form, .rate-save, .clear-all-container {
+.favourite-container, form, .save, .clear-all-container {
     display: inline;
     padding: 20px;
 }
-.rate-save {
+.save {
     font-family: 'Stardos Stencil', sans-serif;
     text-transform: uppercase;
     color: var(--white);
@@ -118,29 +128,39 @@ footer {
     color: var(--white);
     font-family: prompt;
     font-size: 22px;
-    margin: 10px 20px;
+    margin: 10px 200px 10px 0;
     border: 2px solid white;
     text-align: left;
     background-color: var(--blackTransparent);
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 8fr 3fr 250px;
     box-shadow: 0 0 5px var(--yellow);
+    
+}
+.quote-item {
+    margin-left: 30px;
+    text-shadow: 2px 2px 0 var(--black);
+    grid-column: 1 /span 2;
+}
+.quote-item-flagged {
+    margin-left: 30px;
+    grid-column: 1 /span 2;
 }
 .quote-item-container-flagged {
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     font-family: prompt;
     font-size: 22px;
-    margin: 10px 20px;
+    margin: 10px 200px 10px 0;
     border: 2px solid white;
     text-align: left;
     background-color: var(--yellow);
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 8fr 3fr 250px;
     box-shadow: 0 0 5px var(--yellow);
 }
 
-.emoji{
+.emoji, .emoji-flagged{
     display: inline;
     padding: 5px 10px;
     margin: 0 10px;
@@ -149,11 +169,16 @@ footer {
     line-height: 3em;
     border: 2px solid var(--black);
     text-shadow: 2px 2px 0 var(--black);
+    transition: background-color 0.75s;
 }
 .emoji:hover {
     background-color: var(--yellow);
     box-shadow: 0 0 10px var(--white);
     cursor: pointer;
+}
+.emoji-flagged:hover {
+    background-color: var(--black);
+    text-shadow: 1px 0 0 var(--white);
 }
 .emoji-flag {
     width: 35px;
@@ -164,9 +189,25 @@ footer {
     border-radius: 200px;
     border: 2px solid var(--black);
     text-shadow: 1px 1px 0 var(--white);
+    transition: background-color 0.75s;
+}
+.emoji-flag-flagged {
+    width: 35px;
+    margin: 20px;
+    height: 35px;
+    background-color: var(--red);
+    text-align: center;
+    border-radius: 200px;
+    border: 2px solid var(--black);
+    text-shadow: 1px 1px 0 var(--white);
+    transition: background-color 0.75s;
+}
+.emoji-flag-flagged:hover {
+    background-color: var(--white);
 }
 .emoji-container {
     text-align: center;
+    grid-column: 2 /span 2;
 }
 .remove {
     background-color: var(--yellow);
@@ -179,6 +220,26 @@ footer {
     margin: 10px 10px 10px 185px;
     max-height: 55px;
     text-shadow: 1px 1px 0 var(--white);
+    transition: background-color 0.75s;
+}
+.remove-flagged {
+    background-color: var(--red);
+    border-radius: 200px;
+    padding: 3px 10px;
+    font-family: 'Stardos Stencil', sans-serif;
+    color: var(--white);
+    font-size: 33px;
+    border: 2px solid var(--black);
+    margin: 10px 10px 10px 185px;
+    max-height: 55px;
+    text-shadow: 1px 1px 0 var(--black);
+    transition: background-color 0.75s, color 0.75s;;
+    
+}
+.remove-flagged:hover {
+    background-color: var(--black);
+    border: 2px solid var(--red);
+    color: var(--red)
 }
 
 .remove:hover, .emoji-flag:hover {
@@ -188,11 +249,6 @@ footer {
     cursor: pointer;
 }
 
-.quote-item, .rating {
-    margin-left: 30px;
-    text-shadow: 2px 2px 0 var(--black)
-}
-.remove:hover, .emoji-flag:hover, .emoji:hover {
+.remove:hover, .emoji-flag:hover, .emoji:hover, .remove-flagged:hover, .emoji-flag-flagged:hover, .emoji-flagged:hover {
     transform: scale(1.1);
 }
-
