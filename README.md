@@ -39,31 +39,63 @@ As a user I should be able to edit or add to the jokes in some way
 
 ### Wireframes
 
-As part of my planning I designed a rough wireframe and then a more detailed wireframe for each of the pages that I am going to create for the application. Below you can see the evolution of my planning
+As part of my planning I designed a rough wireframe and then a more detailed wireframe for each of the pages that I am going to create for the application. Below is  the basic wireframes for my app
 
 ![Homepage Basic wireframe](./Planning/Wireframes/homepage-basic-wire-frame.png)
-![Homepage Detailed wireframe](./Planning/Wireframes/homepage-detailed-wireframe.png)
 ![Favourites Basic wireframe](./Planning/Wireframes/favourites-basic-wireframe.png)
-![Favourites Detailed wireframe](./Planning/Wireframes/favourites-detailed-wireframe.png)
+
+
 
 ### Colors and Fonts
 
 I like to spend quite a bit of bit on exploring colours and fonts with my work as I feel that they are an extremely important part of the aesthetic feel of any page or application. 
 
 
-#### Color
+#### Colours
 Here are my explorations into color
 
-![Color Exploration](./Planning/Fonts and colors/chuck-norris-color-exploration.png)
+![Favourites Detailed wireframe](./Planning/Wireframes/chuck-norris-color-exploration.png)
 
 I decided to look at how his movies had been portrayed and noticed a particular them for using high contrast yellow & red. I then picked the particular hex's from these and modified them slightly to my chosen color and added a pair of neutrals (white and black).
 
-#### Font
+#### Fonts
 
 Here are my exploration into fonts:
 
-![Color Exploration](./Planning/Fonts and colors/chuck-norris-font-exploration.png)
+![Colour Exploration](./Planning/Wireframes/chuck-norris-font-exploration.png)
 
 I wanted a font that had a feel for old style action movies, kind of simialr to the A team. I eventually found a classic style stencil font that felt like the right one called 'Stardos Stencil' (top left) which was the most legible whilst also have the styling that I wanted.
 
+I took all the exploration from above and created a background using photoshop, I wanted to bring some fo the general chuck norris asetetics to the background and found a license free transparent png of him form one of his movies. I also added an explosion which I edited the sky out of an overlayed onto the gradient background. I also wanted something to fill the upper corners and balance the image, so I found some illustrator vectors of apache helicopters as this was similar to som eof the movie featured images I had found for the colour exploration.
+
+Here is the finalised detailed wireframes I created:
+
+![Homepage Detailed wireframe](./Planning/Wireframes/homepage-detailed-wireframe.png)
+![Favourites Detailed wireframe](./Planning/Wireframes/favourites-detailed-wireframe.png)
+
+## Features
+
+Here is a list of the features that I created for my application
+
+- Users can pull a random Chuck Norris Joke from the Api
+- The joke is displayed on the main joke generator screen 
+- A particular joke can be picked from a category of jokes and then the make me laugh button pulls from this category
+- Jokes can be saved to favourites and viewed on the favourites page
+- favourited jokes can be flagged to highlight them
+- favourited jokes can have select emojis added to them to emphisize them
+- jokes can be deleted individually from the favourites or  a user can delete all at once with a button.
+- app has conditional styling to help with UI on flagging.
+
+## Techonologies and Languages Used
+
+- Javascript
+- React 
+- CSS
+- Adobe Photoshop
+- Adobe Illustrator
+
+
+## How to use the App
+
+When loaded the app should look like this:
 
