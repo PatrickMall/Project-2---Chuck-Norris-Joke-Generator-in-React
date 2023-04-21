@@ -62,5 +62,8 @@ I decided to look at how his movies had been portrayed and noticed a particular 
 
 Here are my exploration into fonts:
 
-![Color Exploration](./Planning/Fonts and colors/chuck-norris-color-exploration.png)
+![Color Exploration](./Planning/Fonts and colors/chuck-norris-font-exploration.png)
+
+I wanted a font that had a feel for old style action movies, kind of simialr to the A team. I eventually found a classic style stencil font that felt like the right one called 'Stardos Stencil' (top left) which was the most legible whilst also have the styling that I wanted.
+
 
