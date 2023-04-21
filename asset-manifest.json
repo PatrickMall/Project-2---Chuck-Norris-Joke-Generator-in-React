@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/css/main.4f69b273.css",
-    "main.js": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/main.7d8a5a68.js",
+    "main.css": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/css/main.a4389ddf.css",
+    "main.js": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/main.37943a9a.js",
     "static/js/787.9e6188a1.chunk.js": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/787.9e6188a1.chunk.js",
     "static/media/chuck-norris-background-1920px.png": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/media/chuck-norris-background-1920px.394b4862755aaee0626a.png",
     "index.html": "/Project-2---Chuck-Norris-Joke-Generator-in-React/index.html",
-    "main.4f69b273.css.map": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/css/main.4f69b273.css.map",
-    "main.7d8a5a68.js.map": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/main.7d8a5a68.js.map",
+    "main.a4389ddf.css.map": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/css/main.a4389ddf.css.map",
+    "main.37943a9a.js.map": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/main.37943a9a.js.map",
     "787.9e6188a1.chunk.js.map": "/Project-2---Chuck-Norris-Joke-Generator-in-React/static/js/787.9e6188a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f69b273.css",
-    "static/js/main.7d8a5a68.js"
+    "static/css/main.a4389ddf.css",
+    "static/js/main.37943a9a.js"
   ]
 }
