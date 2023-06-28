@@ -4,9 +4,9 @@
 
 Hello! I'm Patrick and I created this Chuck Norris Joke Generator
 
-I built this application using react as part of the software immersive course I am studying with general assemebly.
+I built this application using react as part of the software immersive course I am studying with general assembly.
 
-To begin with I created a set of User Stories to define the parts of the application that I need to design and build to show my newly learnt skills with react and api's
+To begin with I created a set of User Stories to define the parts of the application that I need to design and build to show my newly learnt skills with React and API's
 
 I had a minimum viable product requirement for this project which included:
 
@@ -62,7 +62,7 @@ Here are my exploration into fonts:
 
 I wanted a font that had a feel for old style action movies, kind of similar to the A team font. I eventually found a classic style stencil font that felt like the right one called 'Stardos Stencil' (top left) which was the most legible whilst also have the styling that I wanted.
 
-I took all the exploration from above and created a background using Photoshop, I wanted to bring some fo the general chuck norris aesthetics to the background and found a license free transparent png of him from one of his movies. I also added an explosion which I edited the sky out of, and overlayed it onto the gradient background. I also wanted something to fill the upper corners and balance the image, so I found some illustrator vectors of apache helicopters as this was similar to some eof the movie featured images I had found for the colour exploration.
+I took all the exploration from above and created a background using Photoshop, I wanted to bring some of the general chuck norris aesthetics to the background and found a license free transparent png of him from one of his movies. I also added an explosion which I edited the sky out of, and overlayed it onto the gradient background. I also wanted something to fill the upper corners and balance the image, so I found some illustrator vectors of apache helicopters as this was similar style to some of the movie featured images I had found from the colour exploration.
 
 Here is the finalised detailed wireframes I created:
 
@@ -78,14 +78,14 @@ Here is a list of the features that I created for my application
 - A particular joke can be picked from a category of jokes and then the 'make me laugh' button pulls from this category
 - Jokes can be saved to favourites and viewed on the favourites page
 - favourited jokes can be flagged to highlight them
-- favourited jokes can have select emojis added to them to emphisize them
+- favourited jokes can have select emojis added to them to emphasize them
 - jokes can be deleted individually from the favourites or a user can delete all at once with a button.
 - app has conditional styling to help with UI on flagging.
 
-## Techonologies and Languages Used
+## Technologies and Languages Used
 
 - Javascript
-- React
+- React.js
 - CSS
 - Adobe Photoshop
 - Adobe Illustrator
@@ -96,7 +96,7 @@ When loaded the app should look like this:
 
 ![Application front page](./Planning/Wireframes/chuck-norris-front-page.png)
 
-You shuold then click on joke generator and ask for your first chuck norris joke, you can also select a category before hand if you like in the top left corner.
+You should then click on joke generator and ask for your first chuck norris joke by clicking the make me laugh button, you can also select a category before clicking if you like in the top left corner.
 
 If you find a particular joke that you really like you can save it to your favourites and then add your favourite emojis to it or remove it later.
 
@@ -224,7 +224,7 @@ return (
 );
 ```
 
-Here is a snippet form the CSS that I used to create the smooth transitions between hover states that gave my application a very nice transition.
+Here is a snippet from the CSS that I used to create the smooth transitions between flagged states that gave my application a very nice transition.
 
 ```css
 .remove-flagged {
@@ -244,7 +244,7 @@ Here is a snippet form the CSS that I used to create the smooth transitions betw
 
 ## Challenges
 
-For me the biggest challenge on this project was how I had decided to approach this code originally. To start with I had pulled the joke into a string which was stored in the useState, I came to realise that when I needed to try and add the flagged functionality that I was going to need this joke as an object to be able to add a flagged key to it. This meant that I had to go through my code base and change the way that the code read the data and got quite confusing for a while, but eventually (with enough console logging!) I managed to get it to read correctly.
+For me the biggest challenge on this project was how I had decided to approach this code originally. To start with I had pulled the joke into a string which was stored in the useState.As I developed the project I came to realise that when I tried to add the flagged functionality that I was going to need this joke as an object to be able to add a flagged key to it. This meant that I had to go through my code base and change the way that the code read the data and got quite confusing for a while, but eventually (with enough console logging!) I managed to get it to read correctly.
 
 ## My favourite bits
 
