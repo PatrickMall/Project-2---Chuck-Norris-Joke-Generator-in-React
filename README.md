@@ -2,6 +2,8 @@
 
 ## About this Project
 
+[Link to the application](https://patrickmall.github.io/Project-2---Chuck-Norris-Joke-Generator-in-React/)
+
 Hello! I'm Patrick and I created this Chuck Norris Joke Generator
 
 I built this application using react as part of the software immersive course I am studying with General Assembly.
